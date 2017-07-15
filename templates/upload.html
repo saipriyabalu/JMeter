@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload</title>
+</head>
+<body>
+<H1>Name: Saipriya Thirvakadu, Student ID: 1001373543</H1>
+<h1>File Upload</h1>
+<h1>Here you can upload a file</h1>
+<form id="upload_form" action="/uploadImage" method="POST" enctype="multipart/form-data">
+    File name:<input type="text" name="file" placeholder="filename">
+    Upload images:<input type="file" name="upload_files" accept="uploaded_files/*" multiple>
+    <br>
+    <br>Comment: <input type="text" name="comments" placeholder="Comment">
+    <input type="submit" name="upload" value="Upload">
+</form>
+
+<form action="/list" method="post">
+<input type="submit" name="list" value="List Images"/>
+</form>
+<br><br>
+<form action="/query" method="post">
+Enter course numer: <input type="text" name="val1" value=""/>
+<input type="submit" name="list" value="Query"/>
+</form><br>
+
+<form action="/query1" method="post">
+Enter course numer: <input type="text" name="val1" value=""/>
+<input type="submit" name="list" value="Query"/>
+</form><br>
+<form action="/query2" method="post">
+Enter course numer: <input type="text" name="val1" value=""/>
+<input type="submit" name="list" value="Query"/>
+</form><br>
+</body>
+</html>
